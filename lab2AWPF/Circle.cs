@@ -2,7 +2,7 @@
 
 
 
-namespace lab2AConsole
+namespace lab2AWPF
 {
     class Circle : Shape
     {
@@ -10,30 +10,29 @@ namespace lab2AConsole
 
         public Circle() : base()
         {
-            name = "Circle";
+            name = "Круг";
         }
 
-        public Circle(string Name, double R)
+        public Circle(double R) : this()
         {
-            name = Name;
             r = R;
-            area = Math.PI * r * r;
-            perimeter = 2 * Math.PI * r;
-        }
-
-        public double GetArea()
-        {
-            return area;
-        }
-
-        public double GetPerimeter()
-        {
-            return perimeter;
+            GetArea();
+            GetPerimeter();
         }
 
         public double GetR()
         {
             return r;
+        }
+
+        public override double GetArea()
+        {
+            return area = Math.PI * r * r;
+        }
+
+        public override double GetPerimeter()
+        {
+            return perimeter = 2 * Math.PI * r;
         }
     }
 }

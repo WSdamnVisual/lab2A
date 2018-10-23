@@ -1,15 +1,17 @@
-﻿using System;
-
-namespace lab2AConsole
+﻿
+namespace lab2AWPF
 {
     class Square : Rect
     {
         public Square() : base()
         {
-            name = "Square";
+            name = "Квадрат";
         }
 
-        public Square(string Name, double x) : base(Name, x, x)
-        { }
+        public Square(double x) : base(x, x)
+        {
+            name = "Квадрат";
+        }
+
     }
 }

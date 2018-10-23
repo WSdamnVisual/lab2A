@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace lab2AConsole
+namespace lab2AWPF
 {
     abstract class Shape
     {
@@ -11,7 +11,7 @@ namespace lab2AConsole
         {
             area = 0;
             perimeter = 0;
-            name = "unnamed";
+            name = "Без названия";
         }
 
         public string GetName()
@@ -29,7 +29,7 @@ namespace lab2AConsole
 
         public override string ToString()
         {
-            return "Название = " + name + ";\tПериметр = " + perimeter + ";\tПлощадь = " + area + ";";
+            return "Название = " + name + "; Периметр = " + perimeter + "; Площадь = " + area + ";";
         }
     }
 }

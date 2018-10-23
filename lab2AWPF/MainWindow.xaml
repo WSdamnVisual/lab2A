@@ -27,18 +27,15 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
                     <RowDefinition x:Name="RowToHide" Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Label    x:Name="lblName"    Grid.Column="0" Grid.Row="0" Content="Имя: " VerticalAlignment="Center" Margin="5"/>
-                <TextBox  x:Name="tbxName"    Grid.Column="1" Grid.Row="0" Margin="10" VerticalAlignment="Center" />
                 
-                <Label    x:Name="lblLenRad"  Grid.Column="0" Grid.Row="1" Content="Длина: " VerticalAlignment="Center" Margin="5"/>
-                <TextBox  x:Name="tbxLenRad"  Grid.Column="1" Grid.Row="1" Margin="10" VerticalAlignment="Center" PreviewTextInput="tbxLenRad_PreviewTextInput" KeyUp="tbxLenRad_KeyUp" />
-                <Label    x:Name="lblWidth"   Grid.Column="0" Grid.Row="2" Content="Ширина: " VerticalAlignment="Center" Margin="5"/>
-                <TextBox  x:Name="tbxWidth"   Grid.Column="1" Grid.Row="2" Margin="10" VerticalAlignment="Center"/>
-                <Button   x:Name="btnEnter"   Grid.Column="0" Grid.Row="3" Content="Ввод" Grid.ColumnSpan="2" Margin="10" IsEnabled="False" Click="btnEnter_Click"/>
+                <Label    x:Name="lblLenRad"  Grid.Column="0" Grid.Row="0" Content="Длина: " VerticalAlignment="Center" Margin="5"/>
+                <TextBox  x:Name="tbxLenRad"  Grid.Column="1" Grid.Row="0" Margin="10" VerticalAlignment="Center" PreviewTextInput="tbxLenRad_PreviewTextInput" KeyUp="tbxLenRad_KeyUp" />
+                <Label    x:Name="lblWidth"   Grid.Column="0" Grid.Row="1" Content="Ширина: " VerticalAlignment="Center" Margin="5"/>
+                <TextBox  x:Name="tbxWidth"   Grid.Column="1" Grid.Row="1" Margin="10" VerticalAlignment="Center" KeyUp="tbxLenRad_KeyUp" PreviewTextInput="tbxLenRad_PreviewTextInput"/>
+                <Button   x:Name="btnEnter"   Grid.Column="0" Grid.Row="2" Content="Ввод" Grid.ColumnSpan="2" Margin="10" IsEnabled="False" Click="btnEnter_Click"/>
             </Grid>
         </GroupBox>
         <GroupBox Header="Выходные данные" Grid.Column="2">

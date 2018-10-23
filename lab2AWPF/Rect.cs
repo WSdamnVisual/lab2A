@@ -1,5 +1,5 @@
 ﻿
-namespace lab2AConsole
+namespace lab2AWPF
 {
     class Rect : Shape
     {
@@ -9,25 +9,25 @@ namespace lab2AConsole
         {
             area = 0;
             perimeter = 0;
-            name = "Rectangle";
+            name = "Прямоугольник";
         }
 
-        public Rect(double X, double Y):this()
+        public Rect(double X, double Y) : this()
         {
             x = X;
             y = Y;
-            area = x * y;
-            perimeter = 2 * x + 2 * y;
+            GetArea();
+            GetPerimeter();
         }
 
         public override double GetArea()
         {
-            return area = x*y;
+            return area = x * y;
         }
 
         public override double GetPerimeter()
         {
-            return perimeter = 2*x+ 2*y;
+            return perimeter = 2 * x + 2 * y;
         }
 
         public double GetX()
